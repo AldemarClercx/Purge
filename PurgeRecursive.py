@@ -12,7 +12,7 @@ Path = "D:/Projets/Recette/Logs"
 DateRetention = (datetime.now() - timedelta(days=7)) ## Date de rentention
 DateRetentionYYYYmmdd = re.search('(\d+-\d+-\d+)', str(DateRetention)).group(0) ## Récuperation de la date de retention sous le format YYYY-mm-dd
 TimeStamp = str(datetime.now().strftime("%Y%m%d_%H%M%S"))
-LogFile = logging.basicConfig(format='%(asctime)s %(message)s', datefmt="%d-%m-%Y %I:%M:%S %p", filename="D:/Projets/Recette/Logs/Purge/PurgeRetention_"+TimeStamp+".log", level=logging.INFO)
+LogFile = logging.basicConfig(format='%(asctime)s %(message)s', datefmt="%d-%m-%Y %I:%M:%S %p", filename="D:/Projets/Prodcution/Logs/Purge/PurgeRetention_"+TimeStamp+".log", level=logging.INFO)
 
 
 def PurgeRetention():
